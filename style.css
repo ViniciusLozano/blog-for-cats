@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+}
+
+.container{
+  padding: 1.6rem 3.2rem;
+  margin: 0 auto;
+  gap: 7.2rem;
+  display: flex;
+}
+
+.tudo{
+  display: flex;
+  gap: 10rem;
+  
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+
+header{
+  align-items: center;
+  gap: 6.2rem;
+  font-weight: 700;
+  background: #065E7C;
+}
+
+header form{
+  flex: 1;
+}
+
+input{
+  width: 100%;
+  padding: 1.6rem;
+
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: .6rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  opacity: 0.56;
+}
+
+input::placeholder{
+  color: rgb(151, 151, 151);
+}
+
+.avatar{
+  width: 4.2rem;
+  height: 4.2rem;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+/*textos*/
+
+
+main{
+  padding-top: 4.4rem;
+  margin-left: 5rem;
+}
+
+main h1{
+  padding-top: 1.6rem;
+  font-size: 2.4rem;
+  margin-bottom: 3.1rem;
+}
+
+main p{
+  font-size: 1.6rem;
+  max-width: 80rem;
+  text-align: justify;
+}
+
+aside{
+  padding-top: 4.4rem;
+  margin-right: 10rem;
+}
+
+h2{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 3.2rem;
+}
+
+h3{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+aside p{
+  font-size: 1.4rem;
+}
+
+.relacionados{
+  display: block;
+  
+}
+
+.artigos{
+  display: flex;
+  gap: 1rem;
+
+  margin-bottom: 4rem;
+}
+
+.texto{
+  display: block;
+  text-align: justify;
+}
+
+.gato{
+  display: flex;
+  gap: 37.7rem;
+}
+
+button{
+  border: none;
+  background: white;
+  
+  align-items: center;
+  padding-top: 1.6rem;
+}
+
+footer{
+  margin-top: 6rem;
+
+  background-color: #387E96;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p{
+  text-align: center;
+  padding: 1.6rem;
+  font-weight: 600;
+  color: white;
+}
+
+footer{
+  --startY: 100%;
+  animation: move .2s;
+}
+
+@keyframes move{
+  from{
+    transform: translateY(var(--startY));
+  }
+}
+
+@media (max-width: 1400px){
+ .tudo{
+  width: 90%;
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  
+  margin-left: 1rem;
+  margin-right: 13rem;
+ }
+ aside{
+  margin-left: 5rem;
+ }
+}
